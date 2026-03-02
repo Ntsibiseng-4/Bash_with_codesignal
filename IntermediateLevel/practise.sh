@@ -16,25 +16,27 @@ mkdir -p book_report
 cd book_report
 
 # TODO: Create an empty file called book_contents.txt inside book_report
-touch book_contents > book_report
+touch book_contents.txt > book_report
 
 # TODO: Concatenate the contents of each chapter to book_contents.txt
-cat book_draft/chapter1.txt > book_contents.txt
-cat book_draft/chapter1.txt >> book_contents.txt
-cat book_draft/chapter1.txt >> book_contents.txt
+cat ../book_draft/chapter1.txt >> book_contents.txt
+cat ../book_draft/chapter2.txt >> book_contents.txt
+cat ../book_draft/chapter3.txt >> book_contents.txt
 
 # TODO: Create an empty file called final_report.txt inside book_report
-touch final_report.txt
+touch final_report.txt > book_report
 
 # TODO: Copy the contents of the report.txt file to final_report.txt
-cp report.txt final_report.txt
+cp ../book_draft/report.txt final_report.txt
+
 # TODO: Change the current working directory to the parent directory
+cd ..
 
 # TODO: Remove the book_draft directory
+rm -r book_draft
+
 
 # Printing out the contents of book_report directory and book_contents.txt
-cd book_report
-
 echo "Contents of book_report"
 ls
 echo 
