@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# TODO: List all installed packages and save them to a file package_list.txt
+sudo apt list installed > package_list.txt
+
+# TODO: Update the list of available packages and save the output to updated_list.txt
+sudo apt-get update > updated_list.txt
+
+# TODO: Simulate an upgrade by showing the packages that will be upgraded and saving this output to upgrades.txt
+sudo apt-get -s upgrade > upgrades.txt
+
+# TODO: Print out the contents of package_list.txt
+cat package_list.txt
+
+# TODO: Print out the contents of updated_list.txt
+cat updated_list.txt
+
+# TODO: Print out the contents of upgrades.txt
+cat upgrades.txt
